@@ -1,0 +1,75 @@
+body {
+    background-color:#000000;
+    width: 100vw;
+    color:#FFFFFF;
+    font-family: "Press Start 2P", serif;
+    font-weight: 100;
+    font-size:small;
+}
+
+header {
+    background-color: fuchsia ;
+    background-size:cover;
+    /*background-repeat: no-repeat;*/
+    width: 98%;
+    padding:5px;
+}
+
+.cv-sect {
+    border-bottom:solid yellow 1px;
+}
+input[type="submit"] {
+    font-family:"Press Start 2P", serif;
+    background-color: yellow;
+}
+
+li {
+    list-style :none;
+}
+
+.lang {
+    margin-bottom:4px;
+}
+
+.lang-niveau {
+    border:5px solid #45EE06 ;
+    margin-bottom:10px;
+    width:200px;
+    border-radius:5px;
+    animation-name: bar-level;
+    animation-duration: 3s;
+}
+
+
+.nav-list {
+    display:inline;
+    font-weight: 600;
+    padding:0px;
+    margin-right:0;
+    border: solid 0.1px rgb(9, 2, 223);
+    background-color:rgb(9, 2, 223);
+    /*box-shadow: ;*/
+    padding:10px;
+}
+
+input{
+    display:block;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+#experiences {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:nowrap;
+}
+
+
+@keyframes bar-level {
+    from {width:1px;}
+    to {width: 200px;}
+}
+
+/*@keyframes appearance {
+    0% {}
+}*/
