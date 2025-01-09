@@ -86,19 +86,28 @@ input{
 }
 
 #experiences {
-    display:flex;
-    justify-content: space-evenly;
+    display:none;
+    /*justify-content: space-evenly;*/
     flex-wrap:wrap;
 }
 .experience {
-    min-width:80vw;
+    width:45%;
+    display:block;
+    /*height: 50%;*/
     text-size-adjust:inherit;
     border:solid 1px white;
 }
 #contact-form {
+    display:none;
     margin-left: 35px;
 }
 
+#formations {
+    display:none;
+}
+#hobbies {
+    display:none;
+}
 /*@keyframes bar-level-maitrise {
     from {background-color:#45EE06;width:1px;}
     to {background-color:#45EE06;width: 200px;}
