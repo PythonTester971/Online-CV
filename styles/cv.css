@@ -1,18 +1,26 @@
 body {
     background-color:#000000;
-    width: 100vw;
+    /*width: 100vw;*/
     color:#FFFFFF;
-    font-family: "Press Start 2P", serif;
-    font-weight: 100;
-    font-size:small;
+    font-family: "Handjet", serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "ELGR" 1,
+        "ELSH" 2;
 }
 
 header {
-    background-color: fuchsia ;
+    background-color: rgb(244, 113, 203) ;
     background-size:cover;
     /*background-repeat: no-repeat;*/
-    width: 98%;
+    width: 100%;
     padding:5px;
+}
+nav {
+    /*border:solid 0.1px black;*/
+    padding:0;
 }
 
 .cv-sect {
@@ -32,24 +40,43 @@ li {
 }
 
 .lang-niveau {
-    border:5px solid #45EE06 ;
+    border:1px solid #45EE06 ;
+    height:8px;
+    padding-top:0.5px;
+    padding-bottom:0.5px;
     margin-bottom:10px;
     width:200px;
     border-radius:5px;
-    animation-name: bar-level;
-    animation-duration: 3s;
+    background-color:darkslategray;
+    /*animation-name: bar-level-maitrise;
+    animation-duration: 5s;*/ 
 }
 
+#nav-list {
+    max-width:100%;
+    /*border: solid black 0.1px;*/
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    padding:0;
+    gap:10px;
+}
 
-.nav-list {
-    display:inline;
-    font-weight: 600;
-    padding:0px;
-    margin-right:0;
-    border: solid 0.1px rgb(9, 2, 223);
+.nav-items {
+    max-width:60%;
+    /*height:80%;*/
+    /*display:inline;*/
+    font-weight: 400;
+    border: solid 2px rgb(234, 251, 1);
     background-color:rgb(9, 2, 223);
     /*box-shadow: ;*/
-    padding:10px;
+    padding:5px;
+    margin-right:4px;
+    margin-bottom: 2px;
+    text-align: center;   
+}
+.nav-items a {
+    font-size: 1em;
 }
 
 input{
@@ -60,16 +87,24 @@ input{
 
 #experiences {
     display:flex;
-    justify-content: space-around;
-    flex-wrap:nowrap;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+.experience {
+    min-width:80vw;
+    text-size-adjust:inherit;
+    border:solid 1px white;
+}
+#contact-form {
+    margin-left: 35px;
 }
 
-
-@keyframes bar-level {
-    from {width:1px;}
-    to {width: 200px;}
+/*@keyframes bar-level-maitrise {
+    from {background-color:#45EE06;width:1px;}
+    to {background-color:#45EE06;width: 200px;}
 }
 
-/*@keyframes appearance {
-    0% {}
+@keyframes bar-level-intermediaire {
+    from {background-color:#45EE06;width:1px;}
+    to {background-color:#45EE06;width: 50px;}
 }*/
