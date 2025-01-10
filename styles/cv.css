@@ -25,6 +25,7 @@ nav {
 
 .cv-sect {
     border-bottom:solid yellow 1px;
+    padding-bottom: 8px;
 }
 input[type="submit"] {
     font-family:"Press Start 2P", serif;
@@ -40,16 +41,21 @@ li {
 }
 
 .lang-niveau {
-    border:1px solid #45EE06 ;
+    border:3px solid darkslategray;
     height:8px;
-    padding-top:0.5px;
-    padding-bottom:0.5px;
+    padding-top:0.7px;
+    padding-bottom:0.7px;
     margin-bottom:10px;
-    width:200px;
+    /*width:200px;*/
     border-radius:5px;
-    background-color:darkslategray;
-    /*animation-name: bar-level-maitrise;
-    animation-duration: 5s;*/ 
+    background-color:#45EE06;
+}
+
+#eng-level {
+    width:200px
+}
+#cn-level {
+    width:75px;
 }
 
 #nav-list {
@@ -77,6 +83,8 @@ li {
 }
 .nav-items a {
     font-size: 1em;
+    color:#ffffff;
+    text-decoration:none;
 }
 
 input{
@@ -85,11 +93,7 @@ input{
     margin-bottom:10px;
 }
 
-#experiences {
-    display:none;
-    /*justify-content: space-evenly;*/
-    flex-wrap:wrap;
-}
+
 .experience {
     width:45%;
     display:block;
@@ -97,23 +101,40 @@ input{
     text-size-adjust:inherit;
     border:solid 1px white;
 }
-#contact-form {
+
+.displayNone {
     display:none;
+}
+
+#experiences {
+    /*display:none;*/
+    /*justify-content: space-evenly;*/
+    flex-wrap:wrap;
+}
+
+#contact-form {
+   /* display:none;*/
     margin-left: 35px;
 }
 
 #formations {
-    display:none;
+    /*display:none;*/
 }
 #hobbies {
-    display:none;
+    /*display:none;*/
 }
+
+button {
+    display:block;
+}
+
+/*ANIMATIONS NIVEAUX DE MAITRISE DE LANGUES*/
 /*@keyframes bar-level-maitrise {
-    from {background-color:#45EE06;width:1px;}
-    to {background-color:#45EE06;width: 200px;}
+    from {width:1px;}
+    to {width: 200px;}
 }
 
 @keyframes bar-level-intermediaire {
-    from {background-color:#45EE06;width:1px;}
-    to {background-color:#45EE06;width: 50px;}
+    from {width:1px;}
+    to {width: 50px;}
 }*/

@@ -1,10 +1,10 @@
 // Sélectionner les éléments HTML pour afficher le profil et les dépôts
 const profileDiv = document.getElementById("profile");
-const reposDiv = document.getElementById("repos");
+const reposDiv = document.getElementById("repos-gh");
 const display = document.querySelector("#display");
 
 // Jeton d'accès personnel (Remplacez par votre propre jeton sécurisé)
-const token = "votre_jeton_d_acces_personnel";
+const token = "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";
 
 // Fonction pour récupérer et afficher les données du profil GitHub
 async function fetchGitHubProfile(username) {
@@ -27,8 +27,10 @@ async function fetchGitHubProfile(username) {
             <p>Public Repositories: ${data.public_repos}</p>
             <a href="${data.html_url}" target="_blank" style="text-decoration: none; color: blue;">View GitHub Profile</a>
         `;
+
         console.log(data);
         console.log(profileHTML);
+
         // Insérer le contenu dans la div
         profileDiv.innerHTML = profileHTML;
     } catch (error) {
@@ -69,12 +71,12 @@ async function fetchGitHubRepos(username) {
 
 // Fonction pour afficher les dépots au clic
 display.addEventListener("click", async () => {
-    display.textContent = "Loading...";
+    /*display.textContent = "Loading..."*/;
     await fetchGitHubRepos(username);
     // Faire disparaître le bouton après avoir cliqué dessus
-    display.style.display = "none";
+    /*display.style.display = "none";*/
 });
 
 // Appeler les fonctions avec votre nom d'utilisateur GitHub
-const username = "GuillaumePons63"; // Remplacez par votre nom d'utilisateur GitHub
+const username = "PythonTester971"; // Remplacez par votre nom d'utilisateur GitHub
 fetchGitHubProfile(username);

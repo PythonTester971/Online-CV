@@ -21,9 +21,9 @@
 
     <nav>
         <ul id="nav-list">
-          <li class="nav-items"><a>Présentation</a></li>
-          <li class="nav-items"><a>Expériences</a></li>
-          <li class="nav-items"><a>Formations</a></li>
+          <li class="nav-items"><a href="#presentation-title">Présentation</a></li>
+          <li class="nav-items"><a href="#experiences-title">Expériences</a></li>
+          <li class="nav-items"><a href="#formations-title">Formations</a></li>
           <li class="nav-items"><a>Atouts</a></li>
           <li class="nav-items"><a>Demande contact</a></li>
           <li class="nav-items"><a>Contact Infos</a></li>
@@ -34,16 +34,16 @@
 <main>
 
     <section class="cv-sect">
-        <h2>Présentation</h2>
+        <h2 id="presentation-title">Présentation</h2>
 
         <p>To be updated</p>
     </section>
 
     <section class="cv-sect">
-        <h2>Expériences</h2>
+        <h2 id="experiences-title">Expériences</h2>
             <button id="experiences-hide">Voir toutes mes expériences pros</button>
             
-            <ul id="experiences">
+            <ul id="experiences" class="displayNone">
                 <li class="experience">
                     <h3>Poste</h3>
                         <p>Contrôleur de gestion</p>
@@ -67,17 +67,17 @@
     </section>
 
     <section class="cv-sect">
-        <h2>Formations</h2>
+        <h2 id="formations-title">Formations</h2>
         <button id="formations-hide">Voir toutes mes formations</button>
         
-        <p id="formations">To be updated</p>
+        <p id="formations" class="displayNone">To be updated</p>
     </section>
 
     <section class="cv-sect">
         <h2>Centres d'intérêts et loisirs</h2>
         <button id="hobbies-hide">Voir tous mes centres d'intérêts</button>
 
-            <ul id="hobbies">
+            <ul id="hobbies" class="displayNone">
                 <li>Dramas asiatiques</li>
                 <li>Développement web</li>
             </ul>
@@ -101,11 +101,11 @@
     <section class="cv-sect">       
         <h2>Langues étrangères</h2>
         
-            <ul>
-                <li class="lang">Anglais</li>
-                <div class="lang-niveau eng"></div>
-                <li class="lang">Chinois</li>
-                <div class="lang-niveau ch"></div>
+            <ul id="lang-list">
+                <li class="lang" id="eng">Anglais</li>
+                <div class="lang-niveau" id="eng-level"></div>
+                <li class="lang" id="cn">Chinois</li>
+                <div class="lang-niveau" id="cn-level"></div>
             </ul>
     </section>
 
@@ -113,7 +113,7 @@
         <h2>Formulaire de contact</h2>
         <button id="form-hide">Me contacter ?</button>
             
-            <form id="contact-form">
+            <form id="contact-form" class="displayNone">
                 <label for="your-name">Votre nom et prénom : </label><br>
                 <input type="text" id="your-name" value="" name="contact-name">
                 <label for="your-org">Votre organisation : </label><br>
@@ -125,7 +125,11 @@
                 <input type="submit" id="form-button" value="Contactez-moi" name="form-button">
             </form>
     </section>
-
+    <aside>
+        <h2>Repos GitHub</h2>
+            <button id="display">Mes repos</button>
+            <section id="repos-gh"></section>
+    </aside>
 </main>
 <footer>
     <h3>Contact Infos</h3>
@@ -135,6 +139,7 @@
    
 </footer>
 
+    <script src="./scripts/gh_api.js"></script>
     <script src="./scripts/cv.js"></script>
 </body>
 </html>
