@@ -1,3 +1,4 @@
+/*mise en forme générale des balises d'encadrement*/
 body {
     background-color:#000000;
     /*width: 100vw;*/
@@ -9,132 +10,171 @@ body {
     font-variation-settings:
         "ELGR" 1,
         "ELSH" 2;
+    padding-left:15px;
+    padding-right:15px;
 }
 
-header {
-    background-color: rgb(244, 113, 203) ;
-    background-size:cover;
-    /*background-repeat: no-repeat;*/
-    width: 100%;
-    padding:5px;
-}
-nav {
-    /*border:solid 0.1px black;*/
-    padding:0;
-}
-
-.cv-sect {
-    border-bottom:solid yellow 1px;
-    padding-bottom: 8px;
-}
-input[type="submit"] {
-    font-family:"Press Start 2P", serif;
-    background-color: yellow;
+p {
+    font-size:20px;
 }
 
 li {
     list-style :none;
 }
 
-.lang {
-    margin-bottom:4px;
-}
-
-.lang-niveau {
-    border:3px solid darkslategray;
-    height:8px;
-    padding-top:0.7px;
-    padding-bottom:0.7px;
-    margin-bottom:10px;
-    /*width:200px;*/
-    border-radius:5px;
-    background-color:#45EE06;
-}
-
-#eng-level {
-    width:200px
-}
-#cn-level {
-    width:75px;
-}
-
-#nav-list {
-    max-width:100%;
-    /*border: solid black 0.1px;*/
-    display:flex;
-    flex-flow: row wrap;
-    justify-content:center;
-    padding:0;
-    gap:10px;
-}
-
-.nav-items {
-    max-width:60%;
-    /*height:80%;*/
-    /*display:inline;*/
-    font-weight: 400;
-    border: solid 2px rgb(234, 251, 1);
-    background-color:rgb(9, 2, 223);
-    /*box-shadow: ;*/
-    padding:5px;
-    margin-right:4px;
-    margin-bottom: 2px;
-    text-align: center;   
-}
-.nav-items a {
-    font-size: 1em;
-    color:#ffffff;
-    text-decoration:none;
-}
-
-input{
-    display:block;
-    margin-top:5px;
-    margin-bottom:10px;
-}
-
-
-.experience {
-    width:45%;
-    display:block;
-    /*height: 50%;*/
-    text-size-adjust:inherit;
-    border:solid 1px white;
-}
-
-.displayNone {
-    display:none;
-}
-
-#experiences {
-    /*display:none;*/
-    /*justify-content: space-evenly;*/
-    flex-wrap:wrap;
-}
-
-#contact-form {
-   /* display:none;*/
-    margin-left: 35px;
-}
-
-#formations {
-    /*display:none;*/
-}
-#hobbies {
-    /*display:none;*/
-}
-
 button {
     display:block;
 }
 
-/*ANIMATIONS NIVEAUX DE MAITRISE DE LANGUES*/
-/*@keyframes bar-level-maitrise {
-    from {width:1px;}
-    to {width: 200px;}
-}
+.displayNone {
+    display:none;
+}/*variable commune à plusieurs sections,
+notamment pour les bouton d'affichage*/
 
-@keyframes bar-level-intermediaire {
-    from {width:1px;}
-    to {width: 50px;}
-}*/
+
+/*design des balises d'encadrement*/
+
+
+/*design des zones d'organisation*/
+
+.page-extremes {
+    background-color: rgb(244, 113, 203) ;
+    background-size:cover;
+    /*background-repeat: no-repeat;*/
+    width: 100%;
+    padding:5px;
+}
+    /*éléments de la barre de navigation*/
+    nav {
+      /*border:solid 0.1px black;*/
+      padding:0;
+    }
+        #nav-list {
+            max-width:100%;
+            /*border: solid black 0.1px;*/
+                display:flex;
+            flex-flow: row wrap;
+            justify-content:center;
+            padding:0;
+            gap:10px;
+        }
+            .nav-items {
+                max-width:60%;
+                /*height:80%;*/
+                /*display:inline;*/
+                font-weight: 400;
+                border: solid 2px rgb(234, 251, 1);
+                background-color:rgb(9, 2, 223);
+                /*box-shadow: ;*/
+                padding:5px;
+                margin-right:4px;
+                margin-bottom: 2px;
+                text-align: center;   
+            }
+                .nav-items a {
+                    font-size: 1em;
+                    color:#ffffff;
+                    text-decoration:none;
+                }
+
+
+
+/*MAIN*/
+
+/*design commun à toutes les sections*/
+.cv-sect {
+    border-bottom:dashed yellow 1px;
+    padding-bottom: 8px;
+    padding-left:30px;
+}
+    
+    /*SECTION "EXPERIENCES"*/
+    #experiences {
+        /*display:flex;*/
+        /*justify-content: space-evenly;*/
+        flex-wrap:wrap;
+    }
+        .experience {
+            width:45%;
+            display:flex;
+            /*height: 50%;*/
+            text-size-adjust:inherit;
+            border:solid 1px white;
+        }
+            .experience-infos {
+                text-decoration:none;
+                font-weight:500;
+                padding:0;
+            }
+
+
+    /*SECTION "LANGUES*/
+    .lang {
+        margin-bottom:4px;
+    }
+
+    /*barres de niveau en langues*/
+    .lang-niveau {
+        border:3px solid darkslategray;
+        height:8px;
+        padding-top:0.7px;
+        padding-bottom:0.7px;
+        margin-bottom:10px;
+        /*width:200px;*/
+        border-radius:5px;
+        background-color:#45EE06;
+    }
+    /*barre niveau d'anglais*/
+    #eng-level {
+        width:200px
+    }   
+    /*barre niveau de chinois*/
+    #cn-level {
+        width:75px;
+    }
+    /*ANIMATIONS NIVEAUX DE MAITRISE DE LANGUES*/
+        /*@keyframes bar-level-maitrise {
+            from {width:1px;}
+            to {width: 200px;}
+        }
+
+        @keyframes bar-level-intermediaire {
+            from {width:1px;}
+            to {width: 50px;}
+        }*/
+
+
+    /*SECTION DEMANDE DE CONTACT*/
+    #contact-form {
+        margin-left: 35px;
+    }
+        input{
+            display:block;
+            margin-top:5px;
+            margin-bottom:10px;
+        }
+            input[type="submit"] {
+                background-color: yellow;
+                font-family:"Handjet", serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }/*design specific au bouton du formulaire*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

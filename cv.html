@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Geoline Denisse"/>
+    <meta name="description" content="CV de développeur web et web mobile en formation professionnelle avec Simplon.co, à l'écoute d'opportunités (projets, stages)." />
+    <meta name="keywords" content="développeur web, web mobile, HTML, CSS, JS, JavaScript, stage, projets">
     <link href="./styles/cv.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +15,7 @@
 </head>
 
 <body>
-<header>
+<header class="page-extremes">
     <div id="cv-title">
         <h1>Geoline DENISSE<span>_</span></h1>
 
@@ -25,12 +28,14 @@
           <li class="nav-items"><a href="#experiences-title">Expériences</a></li>
           <li class="nav-items"><a href="#formations-title">Formations</a></li>
           <li class="nav-items"><a>Atouts</a></li>
-          <li class="nav-items"><a>Demande contact</a></li>
-          <li class="nav-items"><a>Contact Infos</a></li>
+          <li class="nav-items"><a href="#contact-form-title">Demande contact</a></li>
+          <li class="nav-items"><a href="#gh-title">Créations</a></li>
+          <li class="nav-items"><a href="#infos-title">Contact Infos</a></li>
         </ul>
     </nav>
     
-</header
+</header>
+
 <main>
 
     <section class="cv-sect">
@@ -45,23 +50,28 @@
             
             <ul id="experiences" class="displayNone">
                 <li class="experience">
-                    <h3>Poste</h3>
-                        <p>Contrôleur de gestion</p>
-                    <h3>Entreprise</h3>
-                    <h3>Durée</h3>
-                    <h3>Description</h3>
+                    <ol class="experience-infos">
+                        <li>Poste</li>
+                        <li>Entreprise</li>
+                        <li>Durée</li>
+                        <li>Description</li>
+                    </ol>
                 </li>
                 <li class="experience">
-                    <h3>Poste</h3>
-                    <h3>Entreprise</h3>
-                    <h3>Durée</h3>
-                    <h3>Description</h3>
+                    <ol class="experience-infos">
+                        <li>Poste</li>
+                        <li>Entreprise</li>
+                        <li>Durée</li>
+                        <li>Description</li>
+                    </ol>
                 </li>
                 <li class="experience">
-                    <h3>Poste</h3>
-                    <h3>Entreprise</h3>
-                    <h3>Durée</h3>
-                    <h3>Description</h3>
+                    <ol class="experience-infos">
+                        <li>Poste</li>
+                        <li>Entreprise</li>
+                        <li>Durée</li>
+                        <li>Description</li>
+                    </ol>
                 </li>
             </ul>
     </section>
@@ -110,7 +120,7 @@
     </section>
 
     <section class="cv-sect">
-        <h2>Formulaire de contact</h2>
+        <h2 id="contact-form-title">Formulaire de contact</h2>
         <button id="form-hide">Me contacter ?</button>
             
             <form id="contact-form" class="displayNone">
@@ -118,25 +128,26 @@
                 <input type="text" id="your-name" value="" name="contact-name">
                 <label for="your-org">Votre organisation : </label><br>
                 <input type="text" id="your-org" value ="" name="contact-org">
-                <label for="your-mail">Votre adresse email: </label><br>
+                <label for="your-email">Votre adresse email: </label><br>
                 <input type="email" id="your-email" value="" name="contact-em">
                 <label for="your-phone">Votre numéro de téléphone: </label><br>
                 <input type="tel" id="your-phone" value="" name="contact-phone"><br>
                 <input type="submit" id="form-button" value="Contactez-moi" name="form-button">
             </form>
     </section>
-    <aside>
-        <h2>Repos GitHub</h2>
+
+    <section class="cv-sect">
+        <h2 id="gh-title">Repos GitHub</h2>
             <button id="display">Mes repos</button>
             <section id="repos-gh"></section>
-    </aside>
+    </section>
 </main>
-<footer>
-    <h3>Contact Infos</h3>
+
+<footer class="page-extremes">
+    <h3 id="infos-title">Contact Infos</h3>
         <ul id="contact-means">
             <li>To be updated</li>
         </ul>
-   
 </footer>
 
     <script src="./scripts/gh_api.js"></script>
