@@ -31,10 +31,6 @@ button {
 }/*variable commune à plusieurs sections,
 notamment pour les bouton d'affichage*/
 
-
-/*design des balises d'encadrement*/
-
-
 /*design des zones d'organisation*/
 
 .page-extremes {
@@ -43,7 +39,13 @@ notamment pour les bouton d'affichage*/
     /*background-repeat: no-repeat;*/
     width: 100%;
     padding:5px;
-}
+}/*design commun <header> et <footer>*/
+    #author-bin {
+        display:none;
+    } 
+    #author-string {
+        display:inline;
+    }
     /*éléments de la barre de navigation*/
     nav {
       /*border:solid 0.1px black;*/
@@ -80,7 +82,6 @@ notamment pour les bouton d'affichage*/
 
 
 /*MAIN*/
-
 /*design commun à toutes les sections*/
 .cv-sect {
     border-bottom:dashed yellow 1px;
@@ -99,7 +100,7 @@ notamment pour les bouton d'affichage*/
             display:flex;
             /*height: 50%;*/
             text-size-adjust:inherit;
-            border:solid 1px white;
+            border:dashed 1px white;
         }
             .experience-infos {
                 text-decoration:none;

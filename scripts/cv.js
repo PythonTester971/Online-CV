@@ -35,3 +35,17 @@ document.getElementById('form-hide').addEventListener('click', function() {
     }
 });
 
+cursor = document.getElementById('cursor');
+cursor.addEventListener('click', function() {
+    const geolineDenisseBin = document.getElementById('author-bin');
+    const geolineDenisseStr = document.getElementById('author-string');      
+    if (geolineDenisseBin.style.display === 'none') {
+        cursor.textContent = '>';
+        geolineDenisseBin.style.display = 'inline';
+        geolineDenisseStr.style.display = 'none';
+    } else {
+        geolineDenisseBin.style.display = 'none';
+        geolineDenisseStr.style.display = 'inline';
+        cursor.textContent = '_';
+    }
+});                                        
