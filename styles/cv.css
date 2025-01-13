@@ -24,6 +24,10 @@ li {
 
 button {
     display:block;
+    background-color:rgb(9, 2, 223);
+    border:rgb(234, 251, 1) dotted 2px;
+    font-family:"Handjet", serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#FFFFFF;
 }
 
 .displayNone {
@@ -40,11 +44,16 @@ notamment pour les bouton d'affichage*/
     width: 100%;
     padding:5px;
 }/*design commun <header> et <footer>*/
+
+/*éléments js titre*/
     #author-bin {
         display:none;
     } 
     #author-string {
         display:inline;
+    }
+    #cursor:hover {
+        color:aqua;
     }
     /*éléments de la barre de navigation*/
     nav {
@@ -93,14 +102,15 @@ notamment pour les bouton d'affichage*/
     #experiences {
         /*display:flex;*/
         /*justify-content: space-evenly;*/
-        flex-wrap:wrap;
+        flex-flow:row wrap;
     }
         .experience {
-            width:45%;
+            width:300px;
+            height:300px;
             display:flex;
-            /*height: 50%;*/
             text-size-adjust:inherit;
-            border:dashed 1px white;
+            border:dotted 1px white;
+            /*margin-right: 5px;*/
         }
             .experience-infos {
                 text-decoration:none;
