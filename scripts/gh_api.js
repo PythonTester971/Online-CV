@@ -60,10 +60,10 @@ async function fetchGitHubRepos(username) {
 // Fonction pour afficher les dépots au clique
 
 display.addEventListener("click", async() => {
-    display.textContent = "Loading...";
+    display.textContent = /*"Loading..."*/ "Mes repos GitHub";
     await fetchGitHubRepos(username);
     // je veux faire disparait le bouton après avoir cliqué dessus
-    display.style.display = "none";
+    //display.style.display = "none";
 });
 
 
