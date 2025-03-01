@@ -1,5 +1,9 @@
+// **ATTENTION : Je n'ai pas écrit ce script ! Ceci est un copier-coller d'un script donné par un formateur lors d'un exercice** 
+// Cependant, je tiens à dire que je comprends ce qu'il fait (dans l'ensemble)
+
+
 // Sélectionner les éléments HTML pour afficher le profil et les dépôts
-//const profileDiv = document.getElementById("profile");
+const profileDiv = document.getElementById("profile");
 const reposDiv = document.getElementById("repos-gh");
 const display = document.querySelector("#display")
 
@@ -14,7 +18,7 @@ async function fetchGitHubProfile(username) {
         const data = await response.json();
      
         // Construire le contenu HTML à partir des données du profil
-        /*const profileHTML = `
+        const profileHTML = `
             <img src="${data.avatar_url}" alt="${data.login}'s avatar" style="width: 150px; border-radius: 50%; margin-bottom: 10px;">
             <h2>${data.name || data.login}</h2>
             <p>${data.bio || "No bio available."}</p>
@@ -23,7 +27,7 @@ async function fetchGitHubProfile(username) {
         `;
         
         // Insérer le contenu dans la div
-        profileDiv.innerHTML = profileHTML;*/
+        profileDiv.innerHTML = profileHTML;
     } catch (error) {
         profileDiv.innerHTML = `<p>Error: ${error.message}</p>`;
     }
@@ -115,9 +119,10 @@ document.getElementById('form-hide').addEventListener('click', function() {
 cursor = document.getElementById('cursor');
 cursor.addEventListener('click', function() {
     const geolineDenisseBin = document.getElementById('author-bin');
-    const geolineDenisseStr = document.getElementById('author-string');      
+    const geolineDenisseStr = document.getElementById('author-string');  
+        
     if (geolineDenisseBin.style.display === 'none') {
-        cursor.textContent = '>';
+        cursor.textContent = '>>';
         geolineDenisseBin.style.display = 'inline';
         geolineDenisseStr.style.display = 'none';
     } else {

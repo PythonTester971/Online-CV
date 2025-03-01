@@ -1,7 +1,7 @@
 /*mise en forme générale des balises d'encadrement*/
 body {
     background-color:#000000;
-    /*width: 100vw;*/
+    min-height: 100vh;
     color:#FFFFFF;
     font-family: "Handjet", serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-optical-sizing: auto;
@@ -10,10 +10,15 @@ body {
     font-variation-settings:
         "ELGR" 1,
         "ELSH" 2;
-    padding-left:15px;
+    padding-left:8px;
     padding-right:15px;
+    display: flex;
+    flex-direction: column;
 }
 
+main {
+    flex: 1;
+}
 p {
     font-size:20px;
 }
@@ -30,10 +35,6 @@ button {
     color:#FFFFFF;
 }
 
-.displayNone {
-    display:none;
-}/*variable commune à plusieurs sections,
-notamment pour les bouton d'affichage*/
 
 /*design des zones d'organisation*/
 
@@ -55,15 +56,15 @@ notamment pour les bouton d'affichage*/
     #cursor:hover {
         color:aqua;
     }
+
     /*éléments de la barre de navigation*/
     nav {
-      /*border:solid 0.1px black;*/
       padding:0;
     }
         #nav-list {
             max-width:100%;
             /*border: solid black 0.1px;*/
-                display:flex;
+            display:flex;
             flex-flow: row wrap;
             justify-content:center;
             padding:0;
@@ -71,8 +72,6 @@ notamment pour les bouton d'affichage*/
         }
             .nav-items {
                 max-width:60%;
-                /*height:80%;*/
-                /*display:inline;*/
                 font-weight: 400;
                 border: solid 2px rgb(234, 251, 1);
                 background-color:rgb(9, 2, 223);
@@ -100,23 +99,32 @@ notamment pour les bouton d'affichage*/
     
     /*SECTION "EXPERIENCES"*/
     #experiences {
-        /*display:flex;*/
-        /*justify-content: space-evenly;*/
-        flex-flow:row wrap;
+        display:flex;
+        justify-content:start;
+        flex-wrap:wrap;
+        padding:0;
+        list-style: none;
     }
         .experience {
-            width:300px;
-            height:300px;
-            display:flex;
-            text-size-adjust:inherit;
-            border:dotted 1px white;
-            /*margin-right: 5px;*/
+            width: 450px;
+            border: dotted yellow 1px;
+            padding: 20px;
+            margin:10px;
         }
             .experience-infos {
-                text-decoration:none;
+                max-width:100%;
                 font-weight:500;
                 padding:0;
+                list-style:none;
+                text-align: justify;
+                text-justify: newspaper;
+               
             }
+                .info {
+                    margin-bottom:8px;
+                    
+                }
+                    
 
 
     /*SECTION "LANGUES*/
@@ -142,6 +150,12 @@ notamment pour les bouton d'affichage*/
     /*barre niveau de chinois*/
     #cn-level {
         width:75px;
+    }
+    #kr-level {
+        width:25px;
+    }
+    #es-level{
+        width:25px;
     }
     /*ANIMATIONS NIVEAUX DE MAITRISE DE LANGUES*/
         /*@keyframes bar-level-maitrise {
@@ -171,8 +185,28 @@ notamment pour les bouton d'affichage*/
 
 
 
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size:4rem;
+    }
+    
+    h2 {
+        font-size:2.5rem;
+    }
 
+    p,
+    li {
+        font-size:2rem;
+    }
 
+    .experiences {
+        width: 100%;
+    }
+    .experience {
+        width: 100%;
+    }
+}
+    
 
 
 

@@ -7,7 +7,7 @@
     <meta name="author" content="Geoline Denisse"/>
     <meta name="description" content="CV de développeur web et web mobile en formation professionnelle avec Simplon.co, à l'écoute d'opportunités (projets, stages)." />
     <meta name="keywords" content="développeur web, web mobile, HTML, CSS, JS, JavaScript, stage, projets">
-    <link href="./styles/style.css" rel="stylesheet">
+    <link href="../styles/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
@@ -15,12 +15,29 @@
 </head>
 
 <body>
-<header class="page-extremes">
+<header class="page-extremes displayNone">
     <div id="cv-title">
-        <!--<h1 id="author-name"><span id="author-string">Geoline DENISSE</span><span id="cursor">_</span></h1>-->
-        <h1 id="author-name"><span id="author-string">Geoline DENISSE</span><span id="cursor">_</span><span id="author-bin">01000111 01100101 01101111 01101100 01101001 01101110 01100101 00100000 01000100 01000101 01001110 01001001 01010011 01010011 01000101</span></h1>
+        
+        <h1 id="author-name">
+            <span id="author-string"><span>👩🏻‍💻</span> Geoline DENISSE</span>
+            <span id="cursor">_</span>
+            <span id="author-bin">01000111 01100101 01101111 01101100 01101001 01101110 01100101 00100000 
+                                  01000100 01000101 01001110 01001001 01010011 01010011 01000101</span>
+        </h1>
 
-        <p>Développeur Web et Web Mobile en formation</p>
+        <p>>> <span>🎯</span> Développeur Web et Web Mobile en formation</p>
+        <section>
+            <ul>
+                <li><span>🏡</span> Clermont-Ferrand</li>
+                <li><span>📧</span> geoline.denisse@gmail.com</li>
+                <li><span>📱</span>  06-43-59-33-58</li>
+                <li><span>🚗</span> Permis B <span>🚠</span> Tram</li>
+            </ul>
+            <!-- <ul>
+                    <li></li>
+                    <li></li>
+                </ul> -->
+        </section>
     </div>
 
     <nav>
@@ -28,10 +45,7 @@
           <li class="nav-items"><a href="#presentation-title">Présentation</a></li>
           <li class="nav-items"><a href="#experiences-title">Expériences</a></li>
           <li class="nav-items"><a href="#formations-title">Formations</a></li>
-          <li class="nav-items"><a>Atouts</a></li>
-          <li class="nav-items displayNone"><a href="#contact-form-title">Demande contact</a></li>
-          <li class="nav-items"><a href="#gh-title">Créations</a></li>
-          <li class="nav-items"><a href="#infos-title">Contact Infos</a></li>
+          <li class="nav-items"><a href="#gh-title">Réalisations</a></li>
         </ul>
     </nav>
     
@@ -40,119 +54,196 @@
 <main>
 
     <section class="cv-sect">
-        <h2 id="presentation-title">>Présentation</h2>
+        <h2 id="presentation-title">>> Présentation</h2>
 
-        <p>To be updated</p>
+        <p>
+            ✨Après une formation longue dans le domaine de l'audit financier et contrôle de gestion, 
+            ainsi qu'une première expérience en tant que contrôleur financier, je souhaite me réorienter
+            dans les domaines du développement et de la data.✨
+        </p>
     </section>
 
     <section class="cv-sect">
-        <h2 id="experiences-title">>Expériences</h2>
-            <button id="experiences-hide">Voir toutes mes expériences pros</button>
+        <h2 id="experiences-title">>> <span>💼</span> Expériences</h2>
             
-            <ul id="experiences" class="displayNone">
+            <ul id="experiences">
                 <li class="experience">
-                    <ol class="experience-infos">
-                        <li>Poste</li>
-                        <li>Entreprise</li>
-                        <li>Durée</li>
-                        <li>Description</li>
-                    </ol>
+                    <ul class="experience-infos">
+                        <li class="info">>> Immersion pro métier Développeur web</li>
+                        <li class="info">4.71</li>
+                        <li class="info">Juin 2024 - 15 jours</li>
+                        <li class="info">Clermont-Ferrand</li>
+                        <li class="info">
+                            Analyse et organisation des fonctionnalités de l'application web 
+                            en workflow cohérent et sous forme de diagramme 
+                            <br>> Stack rencontré: script: Python ; DAG: AirFlow ; éditeur: VSCode-Jupyter ; 
+                            Conteneurisation: Docker
+                        </li>
+                    </ul>
                 </li>
                 <li class="experience">
-                    <ol class="experience-infos">
-                        <li>Poste</li>
-                        <li>Entreprise</li>
-                        <li>Durée</li>
-                        <li>Description</li>
-                    </ol>
+                    <ul class="experience-infos">
+                        <li class="info">>> Contrôle externe des satellites - CDD</li>
+                        <li class="info">Conseil Départemental du Puy-de-Dôme</li>
+                        <li class="info">2021-04 à 2023-12 - 2 ans 4 mois</li>
+                        <li class="info">Clermont-Ferrand</li>
+                        <li class="info">
+                            Réalisation de diagnostics financiers des structures financées et suivies
+                            par la collectivité;<br> Participation à l'automatisation du travail de contrôleur
+                            externe côté utilisateur du logiciel métier
+                        </li>
+                    </ul>
                 </li>
                 <li class="experience">
-                    <ol class="experience-infos">
-                        <li>Poste</li>
-                        <li>Entreprise</li>
-                        <li>Durée</li>
-                        <li>Description</li>
-                    </ol>
+                    <ul class="experience-infos">
+                        <li class="info">>> Assitant consolidation et normes IFRS - stage Master 1</li>
+                        <li class="info">Limagrain (Siège)</li>
+                        <li class="info">Avril 2019 à Août 2019 - 5 mois</li>
+                        <li class="info">Saint-Bauzire</li>
+                        <li class="info">
+                            Assitance au paramétrage du logiciel dédié à la gestion des contrats
+                            de crédit-bail, en adéquation avec la règlementation comptable internationale;<br>
+                            Participation aux travaux de clôture des comptes consolidés du groupe
+                        </li>
+                    </ul>
                 </li>
             </ul>
     </section>
 
     <section class="cv-sect">
-        <h2 id="formations-title">>Formations</h2>
-        <button id="formations-hide">Voir toutes mes formations</button>
-        
-        <p id="formations" class="displayNone">To be updated</p>
+        <h2 id="formations-title">>> <span>📚</span> Formations</h2>
+
+    <ul id="formations">
+        <ul class="experience">
+            <li>>> Développement Web & Web Mobile</li>
+            <li>Simplon Clermont-Ferrand</li>
+            <li>9 mois - Du 16-12-2024 au 09-10-2025</li>
+            <li>
+                Réaliser une page web dynamique en HTML, CSS & JS;<br>
+                Associer une base de données à un site web avec PHP;<br>
+                Modéliser et créer une base de données avec UML et phpMyAdmin;<br>
+                Réaliser la maquette d'un site internet;<br>
+            </li>
+        </ul>
+        <ul class="experience">
+            <li>>> Master Comptabilité Contrôle Audit</li>
+            <li>IAE Ecole de Management - Clermont-Ferrand</li>
+            <li>3 ans - De 2018 à 2021</li>
+            <li>
+                Parcours bilingue français/anglais;<br>
+                Echange universitaire avec l'université Konkuk<br>
+                (1an à Séoul, Corée du Sud);<br>
+                Validation des épreuves du DSCG<br>
+                (expertise comptable)
+            </li>
+        </ul>
+        <ul class="experience">
+            <li>>> Licence Droit Economie Gestion<br>parcours Langues Vivantes<br>option Comptabilité</li>
+            <li>UCA - Clermont-Ferrand</li>
+            <li>2 ans - De 2016 à 20218</li>
+            <li>
+                Parcours bilingue français/anglais;<br>
+                Erasmus à la Hochschule Aalen<br>
+                (6 mois à Aalen, Allemagne);<br>
+            </li>
+        </ul>
+    </ul>
     </section>
 
     <section class="cv-sect">
-        <h2>>Centres d'intérêts et loisirs</h2>
-        <button id="hobbies-hide">Voir tous mes centres d'intérêts</button>
+        <h2>>> <span>😎</span> Centres d'intérêts et loisirs</h2>
+            <!--<button id="hobbies-hide">Voir tous mes centres d'intérêts</button>-->
 
-            <ul id="hobbies" class="displayNone">
-                <li>Dramas asiatiques</li>
-                <li>Développement web</li>
+            <ul id="hobbies">
+                <li>
+                    > Regarder des dramas asiatiques<br> 
+                    (Corée du Sud, Chine, Japon, Thaïlande)
+                </li>
+                <li>
+                    > Etudier le développement web<br>
+                    et la programmation informatique
+                </li>
+                <li>
+                    > Lire des web novel et webtoon
+                </li>
+                <li>
+                    > Ecouter de la musique
+                </li>
+                <li>
+                    > Apprendre le chinois (mandarin)
+                </li>
             </ul>
     </section>
 
     <section class="cv-sect">
-        <h2>>Soft Skills</h2>
-        <!--<button>Voir mes qualités pros</button>-->
+        <h2>>> <span>👩🏻‍💼</span> Soft Skills</h2>
 
-        <p>To be updated</p>
+        <ul>
+            <li>
+                > Persévérance
+            </li>
+            <li>
+                > Esprit d'équipe
+            </li>
+            <li>
+                > Autonomie
+            </li>
+            <li>
+                > Curiosité
+            </li>
+        </ul>
     </section>
 
     <section class="cv-sect">
-        <h2>>Stack Technique</h2>
+        <h2>>> <span>🛠️</span> Stack Technique</h2>
+
+            <h3>Langages</h3>
         
             <ul>
-                <li>HTML & CSS</li>
+                <li><span>🦴</span> HTML && <span>🎨</span> CSS && <span>🤸‍♀️</span> JavaScript</li>
+                <li><span>🐘</span> PHP</li>
+                <li><span>🛢️</span> SQL</li>
+                
+            </ul>
+
+            <h3><span>💾</span> Logiciels</h3>
+
+            <ul>
+                <li><span>➰ </span>Visual Studio Code</li>
+                <li><span>🔃 </span>GitHub / Git bash</li>
+                <li><span>🛢 </span>phpMyAdmin</li>
+                <li><span>🌟 </span>StarUML</li>
             </ul>
     </section>
 
     <section class="cv-sect">       
-        <h2>>Langues étrangères</h2>
+        <h2>>> <span>🌎</span> Langues étrangères</h2>
         
             <ul id="lang-list">
-                <li class="lang" id="eng">Anglais</li>
+                <li class="lang" id="eng">> Anglais : C1</li>
                 <li class="lang-niveau" id="eng-level"></li>
-                <li class="lang" id="cn">Chinois</li>
+                <li class="lang" id="cn">> Chinois : A2/B1</li>
                 <li class="lang-niveau" id="cn-level"></li>
+                <li class="lang" id="kr">> Coréen : A1</li>
+                <li class="lang-niveau" id="kr-level"></li>
+                <li class="lang" id="es">> Espagnol : notions</li>
+                <li class="lang-niveau" id="es-level"></li>
             </ul>
     </section>
 
-    <section class="cv-sect displayNone">
-        <h2 id="contact-form-title">Formulaire de contact</h2>
-        <button id="form-hide">Me contacter ?</button>
-            
-            <form id="contact-form" class="displayNone">
-                <label for="your-name">Votre nom et prénom : </label><br>
-                <input type="text" id="your-name" value="" name="contact-name">
-                <label for="your-org">Votre organisation : </label><br>
-                <input type="text" id="your-org" value ="" name="contact-org">
-                <label for="your-email">Votre adresse email: </label><br>
-                <input type="email" id="your-email" value="" name="contact-em">
-                <label for="your-phone">Votre numéro de téléphone: </label><br>
-                <input type="tel" id="your-phone" value="" name="contact-phone"><br>
-                <input type="submit" id="form-button" value="Contactez-moi" name="form-button">
-            </form>
-    </section>
-
     <section class="cv-sect">
-        <h2 id="gh-title">>Repos GitHub</h2>
-            <button id="display">Mes repos</button>
+        <h2 id="gh-title">> <span>📂</span> Repos GitHub</h2>
+        
             <section id="repos-gh"></section>
     </section>
 </main>
 
 <footer class="page-extremes">
-    <h3 id="infos-title">>Contact Infos</h3>
-        <ul id="contact-means">
-            <li>To be updated</li>
-        </ul>
+    <p>Designed by Geoline DENISSE</p>
 </footer>
 
     
 
-    <script defer src="./scripts/script.js"></script>     
+    <script src="./scripts/script.js"></script>     
 </body>
 </html>
