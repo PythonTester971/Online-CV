@@ -98,7 +98,7 @@ button {
     padding-left:30px;
 }
     
-    /*SECTION "EXPERIENCES"*/
+    /*SECTIONS "EXPERIENCES" et "FORMATIONS"*/
     #experiences, #formations {
         display:flex;
         justify-content:start;
