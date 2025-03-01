@@ -25,6 +25,7 @@ p {
 
 li {
     list-style :none;
+    margin-bottom:10px;
 }
 
 button {
@@ -98,20 +99,20 @@ button {
 }
     
     /*SECTION "EXPERIENCES"*/
-    #experiences {
+    #experiences, #formations {
         display:flex;
         justify-content:start;
         flex-wrap:wrap;
         padding:0;
         list-style: none;
     }
-        .experience {
+        .experience, .formation {
             width: 450px;
             border: dotted yellow 1px;
             padding: 20px;
             margin:10px;
         }
-            .experience-infos {
+            .experience-infos,.formations-infos {
                 max-width:100%;
                 font-weight:500;
                 padding:0;
@@ -207,7 +208,9 @@ button {
     }
 }
     
-
+.displayNone {
+    display:none;
+}
 
 
 
