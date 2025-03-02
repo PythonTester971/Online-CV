@@ -22,10 +22,11 @@
     <div id="cv-title">
         
         <h1 id="author-name">
-            <span id="author-string"><span>👩🏻‍💻</span> Geoline DENISSE</span>
+            <span id="author-string" class="displayInline">👩🏻‍💻 Geoline DENISSE</span>
+            <span id="author-bin" class="displayNone">01000111 01100101 01101111 01101100 01101001 01101110 01100101 00100000 
+                01000100 01000101 01001110 01001001 01010011 01010011 01000101</span>
             <span id="cursor">_</span>
-            <span id="author-bin">01000111 01100101 01101111 01101100 01101001 01101110 01100101 00100000 
-                                  01000100 01000101 01001110 01001001 01010011 01010011 01000101</span>
+            
         </h1>
 
         <p>>> <span>🎯</span> Développeur Web et Web Mobile en formation</p>
@@ -33,19 +34,15 @@
             <ul>
                 <li class="info"><span>🏡</span> Clermont-Ferrand</li>
                 <li class="info"><span>📧</span> geoline.denisse@gmail.com</li>
-                <li class="info"><span>📱</span><span style="margin-left:20px;">06-43-59-33-58</span></li>
+                <li class="info"><span>📱</span><span>06-43-59-33-58</span></li>
                 <li class="info"><span>🚗</span> Permis B <span>🚠</span> Tram</li>
             </ul>
-            <!-- <ul>
-                    <li></li>
-                    <li></li>
-                </ul> -->
+
         </section>
     </div>
 
     <nav>
         <ul id="nav-list">
-          <li class="nav-items"><a href="#presentation-title">Présentation</a></li>
           <li class="nav-items"><a href="#experiences-title">Expériences</a></li>
           <li class="nav-items"><a href="#formations-title">Formations</a></li>
           <li class="nav-items"><a href="#gh-title">Réalisations</a></li>
@@ -56,6 +53,7 @@
 
 <main>
 
+<div>
     <section class="cv-sect">
         <h2 id="presentation-title">>> Présentation</h2>
 
@@ -158,32 +156,14 @@
         </li>
     </ul>
     </section>
-
     <section class="cv-sect">
-        <h2>>>> <span>😎</span> Centres d'intérêts et loisirs</h2>
-            <!--<button id="hobbies-hide">Voir tous mes centres d'intérêts</button>-->
-
-            <ul id="hobbies">
-                <li class="info">
-                    > Regarder des dramas asiatiques<br> 
-                    (Corée du Sud, Chine, Japon, Thaïlande)
-                </li>
-                <li class="info">
-                    > Etudier le développement web<br>
-                    et la programmation informatique
-                </li>
-                <li class="info">
-                    > Lire des web novel et webtoon
-                </li>
-                <li class="info">
-                    > Ecouter de la musique
-                </li>
-                <li class="info">
-                    > Apprendre le chinois (mandarin)
-                </li>
-            </ul>
+        <h2 id="gh-title">> <span>📂</span> Repos GitHub</h2>
+        
+            <section id="repos-gh"></section>
     </section>
+</div>
 
+<div>
     <section class="cv-sect">
         <h2>>>> <span>👩🏻‍💼</span> Soft Skills</h2>
 
@@ -211,7 +191,7 @@
             <ul>
                 <li class="info">> <span>🦴</span> HTML && <span>🎨</span> CSS && <span>🤸‍♀️</span> JavaScript</li>
                 <li class="info">> <span>🐘</span> PHP</li>
-                <li class="info">> <span style="margin-left:5px;">🛢</span><span style="margin-left:15px;">SQL</span></li>
+                <li class="info">> <span style="margin-left:5px;">🛢</span><span>SQL</span></li>
                 
             </ul>
 
@@ -220,7 +200,7 @@
             <ul>
                 <li class="info">> <span>➰ </span>Visual Studio Code</li>
                 <li class="info">> <span>🔃 </span>GitHub / Git bash</li>
-                <li class="info">> <span style="margin-left:5px;">🛢</span><span style="margin-left:15px;">phpMyAdmin</span></li>
+                <li class="info">> <span style="margin-left:5px;">🛢</span><span>phpMyAdmin</span></li>
                 <li class="info">> <span>🌟 </span>StarUML</li>
             </ul>
     </section>
@@ -241,10 +221,32 @@
     </section>
 
     <section class="cv-sect">
-        <h2 id="gh-title">> <span>📂</span> Repos GitHub</h2>
-        
-            <section id="repos-gh"></section>
+        <h2>>>> <span>😎</span> Centres d'intérêts et loisirs</h2>
+
+            <ul id="hobbies">
+                <li class="info">
+                    > Dramas asiatiques<br> 
+                    (Corée du Sud, Chine, Japon, Thaïlande)
+                </li>
+                <li class="info">
+                    > Chinois mandarin
+                </li>
+                <li class="info">
+                    > Web novel et webtoon
+                </li>
+                <li class="info">
+                    > Musique
+                </li>
+                <li class="info">
+                    > Développement web<br>
+                    et programmation informatique
+                </li>
+                
+               
+            </ul>
     </section>
+</div>
+    
 </main>
 
 <footer class="page-extremes">
@@ -253,6 +255,6 @@
 
     
 
-    <script src="./scripts/script.js"></script>     
+    <script src="./scripts/displayBin.js"></script>     
 </body>
 </html>

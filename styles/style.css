@@ -42,18 +42,17 @@ button {
 .page-extremes {
     background-color: rgb(244, 113, 203) ;
     background-size:cover;
-    /*background-repeat: no-repeat;*/
     width: 100%;
     padding:5px;
 }/*design commun <header> et <footer>*/
 
 /*éléments js titre*/
-    #author-bin {
+    /* #author-bin {
         display:none;
-    } 
-    #author-string {
+    }  */
+    /* #author-string {
         display:inline;
-    }
+    } */
     #cursor:hover {
         color:aqua;
     }
@@ -210,6 +209,10 @@ button {
     
 .displayNone {
     display:none;
+}
+
+.displayInline {
+    display:inline;
 }
 
 
